@@ -1,7 +1,3 @@
-# Angular Material Demo
-
-API Design with Material
-
 ## How to run / install
 
 1. Install [Node.js](http://nodejs.org/)
