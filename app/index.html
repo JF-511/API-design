@@ -26,7 +26,7 @@
 
 
 <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
-            md-is-locked-open="$media('gt-md')">
+            md-is-locked-open="$mdMedia('gt-md')">
     <md-toolbar class="md-default-theme">
         <h1 class="md-toolbar-tools">
             <a ng-href="/" layout="row" flex="" href="/">
@@ -123,6 +123,14 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/dialog.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/scripts.js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="public/js/jose-jwe.js"></script>
+<script src="public/js/jsrsasign-4.8.3-all-min.js"></script>
+<script src="public/js/co.js"></script>
+<script src="public/js/cryptoserver.js"></script>
 <!-- endbuild -->
 </body>
 </html>

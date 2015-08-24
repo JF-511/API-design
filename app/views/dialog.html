@@ -3,7 +3,7 @@
   <hr/>
   <div layout="row" layout-margin layout-fill layout-padding>
     <div flex>
-      <form name="firstForm">
+      <form name="firstForm" id="genEncryptionkey">
         <md-input-container>
           <label>Type</label>
           <md-select name="dialog1_1" ng-model="dialog1_1" required>
@@ -28,12 +28,12 @@
         </md-input-container>
         <div layout="row">
           <md-button ng-click="clearValue1()" ng-disabled="!dialog1_1 && !dialog1_2" style="margin-right: 20px;">CANCEL</md-button>
-          <md-button ng-click="save1()" ng-disabled="firstForm.$invalid" class="md-primary" layout layout-align="center end">Generate</md-button>
+          <md-button ng-disabled="firstForm.$invalid" class="md-primary" id="genEncryptionkey" type="submit" layout layout-align="center end">Generate</md-button>
         </div>
       </form>
     </div>
     <div flex>
-      <form name="secondForm">
+      <form name="secondForm" id="genEncryptionkey">
         <md-input-container>
           <label>Type</label>
           <md-select name="dialog2_1" ng-model="dialog2_1" required>
@@ -58,14 +58,14 @@
         </md-input-container>
         <div layout="row">
           <md-button ng-click="clearValue2()" ng-disabled="!dialog2_1 && !dialog2_2" style="margin-right: 20px;">CANCEL</md-button>
-          <md-button ng-click="save2()" ng-disabled="secondForm.$invalid" class="md-primary" layout layout-align="center end">Generate</md-button>
+          <md-button ng-disabled="secondForm.$invalid" class="md-primary" id="genEncryptionkey" layout layout-align="center end">Generate</md-button>
         </div>
       </form>
     </div>
   </div>
   </hr>
   <h2>Sign Dialog</h2>
-    <form name="thirdForm">
+    <form name="thirdForm" id="genSigningkey">
       <md-input-container>
         <label>Data to Sign</label>
         <textarea name="dialog3_1" ng-model="dialog3_1" required></textarea>
@@ -82,7 +82,7 @@
       </md-input-container>
       <div layout="row">
         <md-button ng-click="clearValue3()" ng-disabled="!dialog3_1 && !dialog3_2" style="margin-right: 20px;">CANCEL</md-button>
-        <md-button ng-click="save3()" ng-disabled="thirdForm.$invalid" class="md-primary" layout layout-align="center end">Generate</md-button>
+        <md-button ng-disabled="thirdForm.$invalid" class="md-primary" id="genSigningkey" layout layout-align="center end">Generate</md-button>
       </div>
     </form>  
 </div>
